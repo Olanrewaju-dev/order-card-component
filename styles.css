@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* primary colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    color: var(--dark-blue);
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .parent-container {
+    background-color: white;
+    max-width: 90%;
+    margin: 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .container {
+    padding: 30px 20px 30px;
+  }
+
+  .container h3 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .container #order-main-text {
+    text-align: center;
+    margin: 10px 0 35px;
+  }
+
+  .container h3 {
+    font-weight: 900;
+  }
+
+  .order-details {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    padding: 25px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .order-details #change {
+    align-self: center;
+  }
+
+  .payment-section {
+    text-align: center;
+  }
+
+  .payment-section button {
+    display: block;
+    width: 100%;
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.05em;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 10px 3px var(--pale-blue);
+  }
+
+  .payment-section button:hover {
+    cursor: pointer;
+  }
+
+  .payment-section button:active {
+    background-color: var(--desaturated-blue);
+    color: white;
+  }
+}
+
+/* End of MOBILE MEDIA QUERY */
+
+/* DESKTOP MEDIA QUERY */
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: contain;
+    color: var(--dark-blue);
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .parent-container {
+    background-color: white;
+    max-width: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .container {
+    padding: 30px 50px 30px;
+  }
+
+  .container h3 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .container #order-main-text {
+    text-align: center;
+    margin: 10px 0 35px;
+  }
+
+  .container h3 {
+    font-weight: 900;
+  }
+
+  .order-details {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--very-pale-blue);
+    padding: 25px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .order-details #change {
+    align-self: center;
+  }
+
+  .payment-section {
+    text-align: center;
+  }
+
+  .payment-section button {
+    display: block;
+    width: 100%;
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.05em;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 10px 3px var(--pale-blue);
+  }
+
+  .payment-section button:hover {
+    cursor: pointer;
+  }
+
+  .payment-section button:active {
+    background-color: var(--desaturated-blue);
+    color: white;
+  }
+}
